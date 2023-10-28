@@ -1,8 +1,8 @@
 name: First-Workflow
-on: wokflow_dispatch
+on: workflow_dispatch
 jobs:  
   first-job:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
       - name: print statement
         run: echo "Hello World"
@@ -11,6 +11,6 @@ jobs:
         run: echo "Bye for now"
 
       - name: Print multiple lines
-        run |
+        run: |
           echo "Hello Tester",
           echo "Bye for now"
