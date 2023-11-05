@@ -1,0 +1,14 @@
+name: first workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on : ubuntu-latest
+    steps:
+      - name: first print statement
+        run: echo "first print statement"
+      - name: second print statement  
+        run: echo "second print statement"
+      - name: multiple print staments
+        run: |
+          echo "print s1"
+          echo "print s2"
